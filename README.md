@@ -1,1 +1,1 @@
-Exercícios propostos curso FutDEV.
+Exercícios propostos curso FutDEV. SESI/SENAI
