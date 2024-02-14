@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 07</title>
+</head>
+
+<body>
+
+  <script>
+    const hour = prompt('Digite a hora: ')
+
+    function hourGreeting() {
+      if (hour >= 4 && hour < 12) {
+        alert('Bom dia')
+        return
+
+      } else if (hour >= 12 && hour <= 18) {
+        alert('Boa tarde')
+        return
+
+      } else {
+        alert('Boa noite')
+      }
+    }
+
+    hourGreeting()
+
+  </script>
+
+</body>
+
+</html>
