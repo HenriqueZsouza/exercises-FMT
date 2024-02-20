@@ -11,7 +11,19 @@
 
   <script>
 
+    const age = Number(prompt('Digite sua idade: '))
 
+    function compareAge() {
+      if (age >= 18) {
+        alert('Usuário maior de idade!')
+        return
+      } else {
+        alert('Usuário menor de idade!')
+      }
+      return
+    }
+
+    compareAge()
 
   </script>
 
