@@ -1,3 +1,17 @@
-h1 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#foto-perfil {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.logo-github,
+.logo-linkedin {
+  height: 30px;
+  width: 30px;
 }
