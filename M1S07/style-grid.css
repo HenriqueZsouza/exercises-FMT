@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ffcc00;
+}
+
+.header {
+  height: 60px;
+  grid-area: header;
+  background-color: #00ccff;
+}
+
+.content {
+  height: 90vh;
+  grid-area: content;
+  background-color: #99ff99;
+}
