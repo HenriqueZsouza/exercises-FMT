@@ -6,6 +6,8 @@ const products = {
   "leite": 3.49,
 }
 
+let cart = JSON.parse(localStorage.getItem('cart')) || []
+
 function consultPrice() {
   const productInput = document.getElementById('product').value.toLowerCase()
   if (products.hasOwnProperty(productInput)) {
@@ -19,7 +21,8 @@ function consultPrice() {
 function buyProduct() {
   const productInput = document.getElementById('product').value.toLowerCase()
   if (products.hasOwnProperty(productInput)) {
-    car.push({ name: productInput, price: products[productInput] })
+    cart.push({ name: productInput, price: products[productInput] })
+    localStorage.setItem('cart', JSON.stringify(cart))
     alert(`Produto "${productInput}" adicionado ao carrinho.`)
   } else {
     alert(`Produto "${productInput}" não encontrado.`)
@@ -28,7 +31,7 @@ function buyProduct() {
 
 function calculateTotal() {
   let total = 0
-  car.forEach(item => {
+  cart.forEach(item => {
     total += item.price
   })
 
@@ -40,7 +43,16 @@ function calculateTotal() {
 }
 
 function updatedAmount() {
-  document.getElementById('amount-value').innerText = car.length
+  document.getElementById('amount-value').innerText = cart.length
 }
 
-updatedAmount() 
+function updatedTotal() {
+  let total = 0
+  cart.forEach(item => {
+    total += item.price
+  })
+  document.getElementById('total-value').innerText = total.toFixed(2)
+}
+
+updatedAmount()
+updatedTotal() 
