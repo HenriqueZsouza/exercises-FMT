@@ -10,13 +10,16 @@
 <body>
   <div class="container">
     <h1>Consulta de Preços e Compra</h1>
-    <label for="produto">Código ou Nome do Produto:</label>
-    <input type="text" id="produto" placeholder="Digite o código ou nome do produto">
+    <label>Código ou Nome do Produto:</label>
+    <input type="text" id="product" placeholder="Digite o código ou nome do produto">
 
-    <button>Consultar Valor</button>
+    <button onclick="consultPrice()">Consultar Valor</button>
     <button>Comprar Produto</button>
     <button>Calcular Total</button>
+
+    <div id="result"></div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
