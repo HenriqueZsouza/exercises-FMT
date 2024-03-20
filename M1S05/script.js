@@ -28,7 +28,7 @@ function buyProduct() {
 
 function calculateTotal() {
   let total = 0
-  carrinho.forEach(item => {
+  car.forEach(item => {
     total += item.price
   })
 
@@ -38,3 +38,9 @@ function calculateTotal() {
     document.getElementById('total').innerText = 'Carrinho vazio'
   }
 }
+
+function updatedAmount() {
+  document.getElementById('amount-value').innerText = car.length
+}
+
+updatedAmount() 
