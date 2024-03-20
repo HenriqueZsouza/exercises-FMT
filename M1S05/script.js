@@ -19,9 +19,22 @@ function consultPrice() {
 function buyProduct() {
   const productInput = document.getElementById('product').value.toLowerCase()
   if (products.hasOwnProperty(productInput)) {
-    car.push({ nome: productInput, preco: products[productInput] })
+    car.push({ name: productInput, price: products[productInput] })
     alert(`Produto "${productInput}" adicionado ao carrinho.`)
   } else {
     alert(`Produto "${productInput}" não encontrado.`)
+  }
+}
+
+function calculateTotal() {
+  let total = 0
+  carrinho.forEach(item => {
+    total += item.price
+  })
+
+  if (total > 0) {
+    document.getElementById('total').innerText = `Total da compra: R$ ${total.toFixed(2)}`
+  } else {
+    document.getElementById('total').innerText = 'Carrinho vazio'
   }
 }
