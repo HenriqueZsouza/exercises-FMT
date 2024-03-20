@@ -16,3 +16,12 @@ function consultPrice() {
   }
 }
 
+function buyProduct() {
+  const productInput = document.getElementById('product').value.toLowerCase()
+  if (products.hasOwnProperty(productInput)) {
+    car.push({ nome: productInput, preco: products[productInput] })
+    alert(`Produto "${productInput}" adicionado ao carrinho.`)
+  } else {
+    alert(`Produto "${productInput}" não encontrado.`)
+  }
+}
