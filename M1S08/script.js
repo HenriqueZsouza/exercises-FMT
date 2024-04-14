@@ -17,3 +17,7 @@ newElement.appendChild(newText)
 
 let container = document.getElementById('container')
 container.appendChild(newElement)
+
+let paragraph = document.getElementById('paragraph')
+var removeText = document.getElementById('container')
+container.removeChild(removeText)
