@@ -21,3 +21,8 @@ container.appendChild(newElement)
 let paragraph = document.getElementById('paragraph')
 var removeText = document.getElementById('container')
 container.removeChild(removeText)
+
+function changeNewColor(colors) {
+  let elementColors = document.getElementById('newColor')
+  elementColors.style.color = colors
+}
