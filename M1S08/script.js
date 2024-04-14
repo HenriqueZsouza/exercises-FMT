@@ -26,3 +26,7 @@ function changeNewColor(colors) {
   let elementColors = document.getElementById('newColor')
   elementColors.style.color = colors
 }
+
+let newClass = document.getElementById('newClass')
+newClass.classList.add('newClassCreated')
+
