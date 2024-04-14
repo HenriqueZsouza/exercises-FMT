@@ -35,3 +35,6 @@ paragrafo.classList.remove('removed-class')
 
 let image = document.getElementById('image')
 image.setAttribute('titulo', 'Descrição da imagem')
+
+var imageTwo = document.getElementById('imageTest')
+imageTwo.removeAttribute('title')
