@@ -30,3 +30,5 @@ function changeNewColor(colors) {
 let newClass = document.getElementById('newClass')
 newClass.classList.add('newClassCreated')
 
+let removeClass = document.getElementById('removeClass')
+paragrafo.classList.remove('removed-class')
