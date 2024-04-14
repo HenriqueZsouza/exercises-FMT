@@ -32,3 +32,6 @@ newClass.classList.add('newClassCreated')
 
 let removeClass = document.getElementById('removeClass')
 paragrafo.classList.remove('removed-class')
+
+let image = document.getElementById('image')
+image.setAttribute('titulo', 'Descrição da imagem')
