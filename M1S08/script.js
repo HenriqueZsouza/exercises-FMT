@@ -9,3 +9,11 @@ function changeText(newText) {
     element.textContent = newText
   })
 }
+
+let newElement = document.createElement('p')
+
+let newText = document.createTextNode('Novo elemento!')
+newElement.appendChild(newText)
+
+let container = document.getElementById('container')
+container.appendChild(newElement)
